@@ -15,7 +15,7 @@ h1 {
   font-size: 100px;
 
   position: absolute;
-  left: 50%;
+  left: 48%;
   top: 30%;
 }
 
@@ -26,13 +26,13 @@ h1 {
 
 #text {
   position: absolute;
-  left: 50%;
+  left: 48%;
   top: 45%;
 }
 
 #text2 {
   position: absolute;
-  left: 50%;
+  left: 48%;
   top: 50%;
 }
 
@@ -49,6 +49,6 @@ h1 {
   font-size: 20px;
 
   position: absolute;
-  left: 50%;
+  left: 48%;
   top: 60%;
 }

@@ -7,6 +7,8 @@ import "./index.css";
 import ErrorPage from "./error-page";
 import App from "./components/App";
 
+import Card from "./components/Card";
+
 const router = createBrowserRouter([
   {
     path: "/",
