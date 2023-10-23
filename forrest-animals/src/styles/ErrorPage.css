@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  background-color: #fffefa;
+}
+
+#error-page {
+  font-family: "Minecraft", Calibri, Tahoma, sans-serif;
+  display: flex;
+
+  color: #799cf0;
+}
+
+h1 {
+  color: #132fba;
+  font-size: 100px;
+
+  position: absolute;
+  left: 50%;
+  top: 30%;
+}
+
+#text,
+#text2 {
+  font-size: 40px;
+}
+
+#text {
+  position: absolute;
+  left: 50%;
+  top: 45%;
+}
+
+#text2 {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+}
+
+#cat {
+  position: absolute;
+  left: 10%;
+  top: 25%;
+}
+
+#errorMessage {
+  font-family: Satoshi, system-ui, -apple-system, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif;
+
+  font-size: 20px;
+
+  position: absolute;
+  left: 50%;
+  top: 60%;
+}
