@@ -3,21 +3,21 @@
     "title": "Butterfly",
     "subtitle": "Anglais Urticae",
     "text": "Click on the card to see this butterfly in its full glory!",
-    "image": "Image.jpg",
+    "pic": "https://i.ibb.co/gtfLwGr/A-garota-das-borboletas.gif",
     "modelLink": "3d_model1.obj"
   },
   {
     "title": "Raccoon",
     "subtitle": "Procyon Lotor",
     "text": "Click on the card to see this raccoon in its full glory!",
-    "image": "Image.jpg",
+    "pic": "https://i.ibb.co/cTNvh3x/Studio-Ghibli-Gifs.gif",
     "modelLink": "3d_model2.obj"
   },
   {
     "title": "Card 3 Title",
     "subtitle": "Card 3 Subtitle",
     "text": "Card 3 Text",
-    "image": "Image.jpg",
+    "pic": "https://i.ibb.co/L0vDgP7/We-Bare-Bears-Bear-GIF-by-Danny-Chang-Find-Share-on-GIPHY-1.gif",
     "modelLink": "3d_model3.obj"
   }
 ]
