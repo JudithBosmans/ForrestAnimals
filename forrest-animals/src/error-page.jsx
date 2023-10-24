@@ -1,7 +1,7 @@
 import { useRouteError } from "react-router-dom";
 
 import styles from "./styles/ErrorPage.css";
-import cat from "./pics/cat.gif";
+import cat from "./srcPics/cat.gif";
 
 export default function ErrorPage() {
   const error = useRouteError();
@@ -10,7 +10,7 @@ export default function ErrorPage() {
   return (
     <div id="error-page">
       <div id="container2">
-        <img src={cat} id="cat"/>;
+        <img src={cat} id="cat" />;
       </div>
       <div id="container1">
         <h1 id="titleError">Woops!</h1>

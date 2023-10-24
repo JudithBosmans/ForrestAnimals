@@ -21,7 +21,7 @@ const models = [
   },
 ];
 
-const App = () => {
+const Test = () => {
   return (
     <div>
       {models.map((card, index) => (
@@ -89,4 +89,4 @@ const App = () => {
   );
 };
 
-export default App;
+export default Test;

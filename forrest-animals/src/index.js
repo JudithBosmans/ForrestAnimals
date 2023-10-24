@@ -5,21 +5,19 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./index.css";
 
 import ErrorPage from "./error-page";
-import App from "./components/App";
+import Test from "./components/Test";
 import Three from "./components/Three.jsx";
 
 const router = createBrowserRouter([
   {
     path: "/",
+    element: <Test />,
+    errorElement: <ErrorPage />,
+  },
+  {
+    path: "/Three",
     element: <Three />,
     errorElement: <ErrorPage />,
-    children: [
-      // {
-      //   path: "/CherryPage",
-      //   element: <Cherry />,
-      //   errorElement: <ErrorPage />,
-      // },
-    ],
   },
 ]);
 
