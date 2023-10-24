@@ -6,11 +6,12 @@ import "./index.css";
 
 import ErrorPage from "./error-page";
 import App from "./components/App";
+import Three from "./components/Three.jsx";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <App />,
+    element: <Three />,
     errorElement: <ErrorPage />,
     children: [
       // {

@@ -10,7 +10,8 @@
   color: #799cf0;
 }
 
-h1 {
+h1,
+#titleError {
   color: #132fba;
   font-size: 100px;
 
