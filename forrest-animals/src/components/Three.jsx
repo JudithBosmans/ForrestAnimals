@@ -47,7 +47,7 @@ export default function Three() {
   const selectedModel = models.find((model) => model.title === modelTitle);
   return (
     <div>
-      <Link to={app}>Go Back id</Link>
+      <Link id="goBack" to={app}>Go Back id</Link>
       <div
         style={{
           display: "flex",
