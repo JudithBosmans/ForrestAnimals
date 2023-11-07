@@ -21,7 +21,8 @@ TITLE
 }
 
 #title,
-#undertitle {
+#undertitle,
+#buttonStart {
   color: #dcdcdc;
 
   position: absolute;
@@ -29,6 +30,13 @@ TITLE
   height: min-content;
   white-space: nowrap;
   flex-direction: column;
+
+  margin: 0;
+  font-family: Satoshi, system-ui, -apple-system, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 20px;
 }
 
 #title {
@@ -48,13 +56,6 @@ TITLE
 }
 
 #undertitle {
-  margin: 0;
-  font-family: Satoshi, system-ui, -apple-system, "Segoe UI", Roboto,
-    "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-size: 20px;
-
   position: absolute;
   left: 50%;
   top: 34%;
@@ -64,6 +65,27 @@ TITLE
   white-space: nowrap;
   flex-direction: column;
   transform: translateX(-50%);
+}
+
+#buttonStart {
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  width: min-content;
+  height: min-content;
+
+  white-space: nowrap;
+  flex-direction: column;
+  transform: translateX(-50%);
+
+  border: 1px solid white;
+  padding: 3px 10px 3px 10px;
+  border-radius: 30px;
+}
+
+#buttonStart:hover {
+  background-color: white;
+  color: #4b5b55;
 }
 
 /*  -----------
@@ -92,7 +114,7 @@ NAVIGATION
 }
 
 #nav p:hover {
-  box-shadow: inset 125px 0 0 0 #072f02;
+  box-shadow: inset 200px 0 0 0 #072f02;
   color: white;
   font-weight: 500;
 }
@@ -156,6 +178,16 @@ NAVIGATION
   left: 50%;
 }
 
+.ThreeInstruct,
+.ThreeText {
+  color: #dcdcdc;
+  font-size: 20px;
+  font-family: Satoshi, system-ui, -apple-system, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 .ThreeText {
   position: absolute;
   right: 25%;
@@ -163,13 +195,16 @@ NAVIGATION
 
   transform: translateX(50%);
   width: 40vw;
+}
 
-  color: #dcdcdc;
-  font-size: 20px;
-  font-family: Satoshi, system-ui, -apple-system, "Segoe UI", Roboto,
-    "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.ThreeInstruct {
+  position: absolute;
+  right: 25%;
+  margin-top: 370px;
+
+  transform: translateX(50%);
+  width: 40vw;
+  font-weight: 700;
 }
 
 .ThreeModel {

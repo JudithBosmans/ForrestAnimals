@@ -25,28 +25,53 @@ const DynamicModel = ({ url }) => {
 
 const models = [
   {
-    title: "Porsche 911",
-    subTitle: "RAUH-Welt",
+    title: "Porsche 356 C",
+    subTitle: "1964",
+    text: "In model year 1964, the 356 C replaced the 356 B. The range of engines was reduced to three and the existing 60 hp variant was discontinued. Instead, the 75 hp engine of the B 1600 Super represented the entry-level engine. The top-of-the-range engine in the 356 C 2000 GS Carrera delivered a power output of 130 hp.",
+    instructions: "CLICK ON THE MODEL TO SEE",
+    url: "./models/porsche_3.glb",
+  },
+  {
+    title: "Porsche 911 RAUH-Welt",
+    subTitle: "1993",
     text: "RWB/RAUH-Welt BEGRIFF is a Porsche tuner located in Japan. RWB has combined Japanese and Euro tuning elements, creating the distinct RWB style for Porsche chassis. Starting off as a small countryside body-shop in Chiba-Ken, RAUH-Welt 911’s are now a common sight on both the streets and racing circuits of Japan.",
-    pic: "https://i.ibb.co/Bwws9KP/sub-bts-one-shots-who-s-your-daddy-PJM.gif",
+    instructions: "CLICK ON THE MODEL TO SEE",
     url: "./models/porsche_1.glb",
   },
   {
-    title: "Porsche Carrera",
-    subTitle: "911",
-    text: "RWB/RAUH-Welt BEGRIFF is a Porsche tuner located in Japan. RWB has combined Japanese and Euro tuning elements, creating the distinct RWB style for Porsche chassis. Starting off as a small countryside body-shop in Chiba-Ken, RAUH-Welt 911’s are now a common sight on both the streets and racing circuits of Japan.",
-    pic: "https://i.ibb.co/Bwws9KP/sub-bts-one-shots-who-s-your-daddy-PJM.gif",
+    title: "Porsche 911 Carrera 4S",
+    subTitle: "2002",
+    text: "At Porsche, the 'S' has always stood for 'sport' and enhanced performance. For the 911, this means increased engine output, sporty chassis design and large brakes and wheels. 4S. The combination of all-wheel drive and increased performance characterises the Porsche '4S' models.",
+    instructions: "CLICK ON THE MODEL TO SEE",
     url: "./models/porsche_2.glb",
+  },
+  {
+    title: "Porsche 718 Boxster S",
+    subTitle: "2017",
+    text: "Since the introduction of the fourth generation in 2016, the two models have been marketed as the Porsche 718 Boxster and Porsche 718 Cayman. The nameplate Boxster is a portmanteau of boxer, a reference to its flat or boxer engine, and roadster, a reference to the body style.",
+    instructions: "CLICK ON THE MODEL TO SEE",
+    url: "./models/porsche_5.glb",
   },
 ];
 
 const Test = () => {
+  const handleStartClick = () => {
+    window.scrollBy({
+      top: window.innerHeight,
+      left: 0,
+      behavior: "smooth",
+    });
+  };
+
   return (
     <div>
       <div className="main-container">
         <div id="titleHome">
-          <h1 id="title">Porshe</h1>
+          <h1 id="title">Porsche</h1>
           <p id="undertitle">A short history of a beautiful car</p>
+          <button id="buttonStart" onClick={handleStartClick}>
+            Start
+          </button>
         </div>
         <div id="nav">
           <motion.div
@@ -121,6 +146,7 @@ const Test = () => {
                 {card.subTitle}
               </h2>
               <p className="ThreeText">{card.text}</p>
+              <p className="ThreeInstruct">{card.instructions}</p>
             </div>
             <Link to={`/Three?model=${card.title}`}>
               <div className="ThreeModel">
