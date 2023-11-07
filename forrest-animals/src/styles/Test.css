@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&family=Work+Sans:wght@100&display=swap");
+
 .root {
   position: relative;
   align-items: flex-start;
@@ -5,9 +7,12 @@
 
   font-family: Comico, system-ui, -apple-system, "Segoe UI", Roboto,
     "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif;
+  background-color: #4b5b55;
 }
 
-/*TITLE*/
+/*  -----------
+TITLE
+ ----------- */
 
 #titleHome  {
   position: relative;
@@ -17,9 +22,7 @@
 
 #title,
 #undertitle {
-  color: #040404;
-  font-family: Comico, system-ui, -apple-system, "Segoe UI", Roboto,
-    "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif;
+  color: #dcdcdc;
 
   position: absolute;
   width: min-content;
@@ -29,18 +32,43 @@
 }
 
 #title {
+  font-family: "Abhaya Libre", serif;
+  font-weight: 700;
   font-size: 120px;
-  left: 10%;
-  top: 40%;
+
+  position: absolute;
+  left: 50%;
+  top: 20%;
+  width: min-content;
+  height: min-content;
+
+  white-space: nowrap;
+  flex-direction: column;
+  transform: translateX(-50%);
 }
 
 #undertitle {
+  margin: 0;
+  font-family: Satoshi, system-ui, -apple-system, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   font-size: 20px;
-  left: 13%;
-  top: 58%;
+
+  position: absolute;
+  left: 50%;
+  top: 34%;
+  width: min-content;
+  height: min-content;
+
+  white-space: nowrap;
+  flex-direction: column;
+  transform: translateX(-50%);
 }
 
-/*NAVIGATION*/
+/*  -----------
+NAVIGATION
+ ----------- */
 
 #nav {
   display: flex;
@@ -59,26 +87,124 @@
 #nav p {
   padding: 0px 50px 0px 40px;
 
-  color: #040404;
+  color: #dcdcdc;
   transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
 #nav p:hover {
-  box-shadow: inset 125px 0 0 0 #f5d74f;
+  box-shadow: inset 125px 0 0 0 #072f02;
   color: white;
   font-weight: 500;
 }
 
-/*3D model*/
+/*  -----------
+3D MODEL
+ ----------- */
 
-#origamiModel {
+#peepeepoopoo {
   position: absolute;
-  left: 160%;
-  top: 30%;
+  left: 50%;
+  top: 85%;
+  transform: translate(-50%, -50%);
+  width: 80vw;
+  height: 80vh;
+}
+
+/* -----------
+3D PAGE
+ ----------- */
+
+.container2 {
+  margin-top: 120vh;
+  background-color: #4b5b55;
+  position: relative;
+}
+
+.ThreeTitle,
+.ThreeUndertitle {
+  position: absolute;
   width: min-content;
   height: min-content;
+  margin: 0;
 
+  display: flex;
   white-space: nowrap;
-  flex-direction: row;
+
+  color: #dcdcdc;
+  font-size: 20px;
+  font-family: Satoshi, system-ui, -apple-system, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.ThreeTitle {
+  font-family: "Abhaya Libre", serif;
+  font-weight: 700;
+  font-size: 120px;
+
+  position: absolute;
+  left: 50%;
+  margin-top: -80px;
   transform: translateX(-50%);
+}
+
+.ThreeUndertitle {
+  position: absolute;
+  transform: translateX(-50%);
+  margin-top: -70px;
+  left: 50%;
+}
+
+.ThreeText {
+  position: absolute;
+  right: 25%;
+  margin-top: 200px;
+
+  transform: translateX(50%);
+  width: 40vw;
+
+  color: #dcdcdc;
+  font-size: 20px;
+  font-family: Satoshi, system-ui, -apple-system, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.ThreeModel {
+  width: 45vw;
+  height: 50vh;
+  margin: 150px 0px 0px 50px;
+}
+
+/* -----------
+3D SPACE
+ ----------- */
+
+.parentContainer {
+  position: relative;
+}
+
+.containerButton {
+  position: absolute;
+  left: 50%;
+  top: 10%;
+
+  transform: translateX(-50%);
+  z-index: 10;
+}
+
+#goBack {
+  padding: 10px;
+  background-color: white;
+  color: black;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+#goBack:hover {
+  background-color: #4b5b55;
+  color: white;
+  font-weight: 700;
 }

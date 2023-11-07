@@ -2,24 +2,24 @@ import { Canvas } from "@react-three/fiber";
 import { Stats, OrbitControls, Environment, useGLTF } from "@react-three/drei";
 import { useLocation } from "react-router-dom";
 
-import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import app from "./App";
+import app from "./App.js";
+import styles from "../styles/Test.css";
 
 const Models = [
   {
-    title: "Cat",
-    subTitle: "Felix domesticus",
-    text: "Blablabla",
+    title: "Porsche 911",
+    subTitle: "RAUH-Welt",
+    text: "RWB/RAUH-Welt BEGRIFF is a Porsche tuner located in Japan. RWB has combined Japanese and Euro tuning elements, creating the distinct RWB style for Porsche chassis. Starting off as a small countryside body-shop in Chiba-Ken, RAUH-Welt 911’s are now a common sight on both the streets and racing circuits of Japan.",
     pic: "https://i.ibb.co/Bwws9KP/sub-bts-one-shots-who-s-your-daddy-PJM.gif",
-    url: "./models/cat.glb",
+    url: "./models/porsche_1.glb",
   },
   {
-    title: "Butterfly",
-    subTitle: "Anglais Urticae",
-    text: "Blablabla",
-    pic: "https://i.ibb.co/gtfLwGr/A-garota-das-borboletas.gif",
-    url: "./models/Butterfly.glb",
+    title: "Porsche Carrera",
+    subTitle: "911",
+    text: "RWB/RAUH-Welt BEGRIFF is a Porsche tuner located in Japan. RWB has combined Japanese and Euro tuning elements, creating the distinct RWB style for Porsche chassis. Starting off as a small countryside body-shop in Chiba-Ken, RAUH-Welt 911’s are now a common sight on both the streets and racing circuits of Japan.",
+    pic: "https://i.ibb.co/Bwws9KP/sub-bts-one-shots-who-s-your-daddy-PJM.gif",
+    url: "./models/porsche_2.glb",
   },
 ];
 
@@ -35,19 +35,20 @@ export default function Three() {
 
   const models = [
     {
-      title: "Cat",
-      url: "./models/cat.glb",
-    },
-    {
-      title: "Butterfly",
-      url: "./models/Butterfly.glb",
+      title: "Porsche 911",
+      url: "./models/porsche_1.glb",
     },
   ];
 
   const selectedModel = models.find((model) => model.title === modelTitle);
   return (
-    <div>
-      <Link id="goBack" to={app}>Go Back id</Link>
+    <div className="parentContainer">
+      <div className="containerButton">
+        <Link id="goBack" to={app}>
+          Go Back
+        </Link>
+      </div>
+
       <div
         style={{
           display: "flex",
@@ -56,12 +57,12 @@ export default function Three() {
           height: "150vh",
         }}
       >
-        <Canvas camera={{ position: [0, 1, 3], near: 0.025 }}>
-          <Environment files="./models/background.hdr" background />
+        <Canvas camera={{ position: [10, 2, 0], fov: 35 }}>
           <group>
             <Model url={selectedModel.url} />
           </group>
           <OrbitControls autoRotate />
+          <Environment files="./pics/pic.hdr" background />
           <Stats />
         </Canvas>
       </div>

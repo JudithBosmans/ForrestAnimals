@@ -8,11 +8,19 @@ import ErrorPage from "./error-page";
 import Test from "./components/Test";
 import Three from "./components/Three.jsx";
 
+import Model1 from "./components/Model1.js";
+
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Test />,
     errorElement: <ErrorPage />,
+    children: [
+      {
+        path: "/Model1",
+        element: <Model1 />,
+      },
+    ],
   },
   {
     path: "/Three",
