@@ -5,21 +5,17 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./index.css";
 
 import ErrorPage from "./error-page";
-import Test from "./components/Test";
+import App from "./components/App";
 import Three from "./components/Three.jsx";
-
-import Model1 from "./components/Model1.js";
+import Scene from "./components/Scene.jsx";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Test />,
+    element: <App />,
     errorElement: <ErrorPage />,
     children: [
-      {
-        path: "/Model1",
-        element: <Model1 />,
-      },
+      { path: "/Scene", element: <Scene />, errorElement: <ErrorPage /> },
     ],
   },
   {
@@ -27,6 +23,7 @@ const router = createBrowserRouter([
     element: <Three />,
     errorElement: <ErrorPage />,
   },
+  {},
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(

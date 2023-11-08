@@ -4,7 +4,7 @@ import { useLocation } from "react-router-dom";
 
 import { Link } from "react-router-dom";
 import app from "./App.js";
-import styles from "../styles/Test.css";
+import styles from "../styles/App.css";
 
 const Models = [
   {
